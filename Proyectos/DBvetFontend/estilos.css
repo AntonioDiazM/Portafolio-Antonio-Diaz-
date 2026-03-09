@@ -1,0 +1,99 @@
+/*estilos de la pagina de inicio de sesion y de registro de nuevo usuario*/
+#bienvenida {
+    text-align: center ;
+    display: block;
+    color :rgb(56, 107, 46) ;
+    font-size: 30px ;
+    
+}
+
+#bienvenida h5 {
+    font-size: 15px ;
+    text-align: center;
+}
+/*imagen de fondo de las paginas */
+body{
+    background-image: url(img_doc/fondo.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*estilos del formunario de iniciar sesion*/
+#iniciarSesion{
+    display: flex ;
+    display:grid;
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+    position: relative ; 
+    padding: 20px ;
+    width: 20% ;
+    margin:40px auto ; 
+    border-radius:10px; 
+}
+/*estilos de los input*/
+.espacioParaDatos{
+    height: 25px ;
+    border : 2px solid;
+    border-color: rgb(124, 124, 124);
+    border-radius: 5px;   
+}
+/*pie de pagina*/
+footer {
+    background-color:rgb(161, 161, 161)  ;
+    display: block;
+    bottom: 0;
+    position: fixed;
+    width:100%; 
+    left:0; 
+    height:7%; 
+}
+footer p { 
+    display:inline;
+    float: left ; 
+}
+footer a { 
+    display:block ; 
+    float: right ; 
+}
+/*estilos de los botones y sus transiciones */
+.boton{
+    transition: background-color 0.3s ease ; 
+    border : 1px solid ; 
+    border-color:rgb(124, 124, 124); 
+    border-radius: 3px ;
+    background-color: rgb(61, 171, 175);
+    width: 100px ;
+    height: 25px ;
+    color:white; 
+    cursor: pointer;
+}
+.boton:hover{
+    background-color:rgb(68, 191, 196) ;
+}
+/*imagenes del logo de dbvet*/
+#imagenDBvet {  
+    width: 120px;
+    height: 55px;
+}
+#imagenDBvet2 {  
+
+    display: grid;
+    width: 120px;
+    height: 55px;
+    margin: 10px auto ; 
+}
+/*estilos del formulario de creacion de cuenta */
+#ingresoDeDatos{
+    display: flex ;
+    display:grid;
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+    position: relative ; 
+    padding: 20px ;
+    width: 20% ;
+    margin:40px auto ; 
+    border-radius:10px; 
+}
+#ingresoDeDatos h1 {
+    color :rgb(56, 107, 46) ;
+
+}
