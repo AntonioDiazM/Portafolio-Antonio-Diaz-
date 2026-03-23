@@ -43,6 +43,7 @@ body{
     font-weight: 700;
     transition: background-color 0.3s , opacity 0.3s;
     white-space: nowrap; 
+    text-decoration: none;
 }
 .boton:hover{
     background-color: var(--color-acento) ; 
@@ -101,18 +102,20 @@ body{
     border : 3px solid #6e8ea6;
     border-radius: 20px;
     margin-left:3%;
-    cursor : pointer ;
     transition: background-color 0.3s , opacity 0.3s;
     box-shadow: 0 17px 30px #8ac0f0;
+    transition: transform 0.3s ease;
+    cursor: default;
 }
 #sobreMi:hover{
     /*background-color: #ddf0ff ; color antiguo */
     background-color: var(--color-secundario) ;
     border : 3px solid #4c6d86;
+    transform: scale(1.05);
 }
 #imagenYo{
-    width:30%;
-    margin-left:35%;
+    width:50%;
+    margin-left:25%;
     border-radius:5%;
 }
 #recursos{
@@ -129,12 +132,14 @@ body{
     border : 3px solid #6e8ea6;
     border-radius: 20px;
     margin-right:3%;
-    cursor : pointer ;
     transition: background-color 0.3s , opacity 0.3s;
+    transition: transform 0.3s ease; 
+    cursor: default;
 }
 #recursos:hover{
     background-color: var(--color-secundario) ; 
     border : 3px solid #4c6d86;
+    transform:scale(1.05);
 }
 
 #estudios{
@@ -153,10 +158,12 @@ body{
     margin-right: 3%;
     cursor : pointer ;
     transition: background-color 0.3s , opacity 0.3s;
+    transition: transform 0.3s ease;
 }
 #estudios:hover{
     background-color: var(--color-secundario) ; 
     border : 3px solid #4c6d86;
+    transform: scale(1.05);
 }
 /*estilos descripcion de proyectos*/
 #proyectos{
