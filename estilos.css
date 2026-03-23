@@ -1,9 +1,20 @@
+/*Definicion de los colores principales a usar en toda la pagina */
+:root {
+    --color-fondo: #C2DCF2;
+    --color-primario: #3b97dd ;
+    --color-secundario : #78c4ff;
+    --color-acento: #e3b67a ;
+    --color-texto: #383E42 ;
+    --color-blanco: #ffffff ; 
+    --color-borde: #6e8ea6;
+}
 /*estilos de toda la pagina*/
 html {
   scroll-behavior: smooth;
 }
 body{
-    background-color:#C2DCF2;
+    background-color: var(--color-fondo) ;
+    color: var(--color-texto);  
 }
 /*estilos de toda la cabecera */
 #cabecera{
@@ -20,24 +31,22 @@ body{
     margin-top: 5%;
     margin-left: 25%;
     margin-right: 25%;
-    box-shadow: 0 17px 30px #8ac0f0;
-
+    box-shadow: 0 17px 30px #8ac0f0; 
 }
 .boton{
-    background-color: #f4f5f0; 
-    color: #383E42; 
+    background-color: var(--color-blanco); 
+    color: var(--color-texto); 
     border: 3px solid transparent ;
     padding : 8px 18px ; 
     border-radius: 8px ;
     cursor : pointer ; 
-    font-size:35hv;
     font-weight: 700;
     transition: background-color 0.3s , opacity 0.3s;
     white-space: nowrap; 
 }
 .boton:hover{
-    background-color: #Fac98e ; 
-    border : 3px solid #fac98e;
+    background-color: var(--color-acento) ; 
+    border : 3px solid var(--color-acento);
 }
 .encabezado{
     margin-left: auto;
@@ -54,6 +63,7 @@ body{
     margin-top: 12%;
     margin-left: 30%;
     margin-right: 30%; 
+    margin-bottom: 20%;
 } 
 .presentacion , h1 {
     margin: 0; 
@@ -64,9 +74,8 @@ body{
     color:#000305;
 }
 #botonContactoPr{
-    background-color: #e3b67a ;
+    background-color: var(--color-acento) ;
 }
-
 #botonContantoPr:hover{
     background-color: #d49a50;
   transform: translateY(-3px);
@@ -98,23 +107,18 @@ body{
 }
 #sobreMi:hover{
     /*background-color: #ddf0ff ; color antiguo */
-    background-color: #78c4ff ;
+    background-color: var(--color-secundario) ;
     border : 3px solid #4c6d86;
-    
-
 }
 #imagenYo{
-    display:absolute;
     width:30%;
     margin-left:35%;
     border-radius:5%;
-    
 }
-
 #recursos{
     color: #383E42; 
     position: absolute;
-    background-color: #C2DCF2;
+    background-color: var(--color-fondo);
     top: 0;
     right: 0;
     width: 48%;
@@ -129,14 +133,14 @@ body{
     transition: background-color 0.3s , opacity 0.3s;
 }
 #recursos:hover{
-    background-color: #3b97dd ; 
+    background-color: var(--color-secundario) ; 
     border : 3px solid #4c6d86;
 }
 
 #estudios{
-    color: #383E42; 
+    color:var(--color-texto); 
     position: absolute;
-    background-color: #C2DCF2;
+    background-color: var(--color-fondo);
     bottom: 0;
     right: 0;
     width: 48%;
@@ -144,14 +148,14 @@ body{
     padding-left:2%;
     padding-top:2%;
     padding-right:2%;
-    border : 3px solid #6e8ea6;
+    border : 3px solid #6e8ea6 ;
     border-radius: 20px;
     margin-right: 3%;
     cursor : pointer ;
     transition: background-color 0.3s , opacity 0.3s;
 }
 #estudios:hover{
-    background-color: #61b9fc ; 
+    background-color: var(--color-secundario) ; 
     border : 3px solid #4c6d86;
 }
 /*estilos descripcion de proyectos*/
@@ -176,14 +180,15 @@ body{
     margin:2%;
     width:29%;
     color: #383E42; 
-    background-color: #9fd4ff;
+    background-color: var(--color-secundario);
     border-radius: 10px;
-    padding:2%;
     cursor : pointer ;
     transition: background-color 0.3s , opacity 0.3s;
+    transition: transform 0.3s ease ; 
 }
 #dbvet:hover{
-background-color: #78c4ff ;
+    background-color: var(--color-primario) ;
+    transform:scale(1.1);
 }
 .imgProyecto{
     width:100%;
@@ -196,9 +201,12 @@ background-color: #78c4ff ;
     overflow:hidden;
     object-fit: cover;
 }
+.descripcionProyecto{
+    margin: 2%;
+}
 .descripcionProyecto p{
     display:inline-block;
-    background-color: #3b97dd;
+    background-color: var(--color-blanco);
     padding:3px;
     border-radius:3px;
     width: 15% ;
@@ -217,7 +225,7 @@ background-color: #78c4ff ;
     text-align: center;
     height:auto;
     width:40%;
-    border: 3px solid #6e8ea6;
+    border: 3px solid var(--color-borde);
     border-radius: 20px; 
     margin-right:30%;
     margin-left:30%;
@@ -225,7 +233,7 @@ background-color: #78c4ff ;
 .espacioForm{
     width:95%;
     height:30px;
-    border: 2px solid #6e8ea6;
+    border: 2px solid var(--color-borde);
     border-radius:5px;
     background-color: #ddf0ff;
     margin:2%;
@@ -234,7 +242,7 @@ background-color: #78c4ff ;
     height:80px;
 }
 #botonForm{
-    background-color: #e3b67a ;
+    background-color: var(--color-acento);
 }
 /*footer*/
 #pieDePagina{
@@ -257,5 +265,5 @@ background-color: #78c4ff ;
 }
 #botonDescargar{
     display:block;
-    margin:0 auto;
+    margin: 0 auto ;
 }
